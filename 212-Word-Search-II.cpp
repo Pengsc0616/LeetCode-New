@@ -16,8 +16,7 @@ public:
         visited = vector<vector<bool>>(n, vector<bool>(m, false));
         for(int i=0; i<n; i++) {
             for(int j=0; j<m; j++) {
-                string tempWord = "";
-                dfs(board, i, j, root, tempWord);
+                dfs(board, i, j, root, "");
             }
         }
         return ans;
